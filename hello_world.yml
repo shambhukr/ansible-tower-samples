@@ -1,8 +1,8 @@
 - name: Sample 
   hosts: all
   tasks:
-    - name: Get the host IP 
-    shell: 'echo $(hostname -i)'
-    register: hostip
+    - name: Get the host Name 
+    shell: 'echo $(hostname)'
+    register: host
     - name: Print the value 
-    debug: msg="The IP is {{ hostip.stdout }}" 
+    debug: msg="The IP is {{ host.stdout }}" 
