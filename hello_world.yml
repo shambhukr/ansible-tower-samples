@@ -1,8 +1,8 @@
 - name: Sample 
   hosts: all
   tasks:
-    - name: Get the host Name 
-    shell: 'echo $(hostname)'
-    register: host
+    - name: Get the host detail 
+      shell: 'echo $(hostname -i)'
+      register: host
     - name: Print the value 
-    debug: msg="The Host is {{ host.stdout }}" 
+      debug: msg="The Host is {{ host.stdout }}" 
