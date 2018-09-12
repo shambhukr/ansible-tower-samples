@@ -5,4 +5,4 @@
     shell: 'echo $(hostname)'
     register: host
     - name: Print the value 
-    debug: msg="The IP is {{ host.stdout }}" 
+    debug: msg="The Host is {{ host.stdout }}" 
