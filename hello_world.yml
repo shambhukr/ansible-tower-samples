@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Hello Message
-      shell: 'pwd;hostname -i'
+    - shell: 'pwd;hostname -i'  
       debug:
         msg: "Hello World!"
 
