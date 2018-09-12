@@ -1,8 +1,8 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
-    - shell: 'pwd;hostname -i'  
+    - name: Hello Message 
       debug:
         msg: "Hello World!"
-
+  tasks:
+    - shell: 'pwd;hostname -i' 
