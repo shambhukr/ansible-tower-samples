@@ -1,8 +1,8 @@
-- name: Hello World Sample
+- name: Sample 
   hosts: all
   tasks:
-    - name: Hello Message 
-      debug:
-        msg: "Hello World!"
-  tasks:
-    - shell: 'pwd;hostname -i' 
+    - name: Get the host IP 
+    shell: 'echo $(hostname -i)'
+    register: hostip
+    - name: Print the value 
+    debug: msg="The IP is {{ hostip.stdout }}" 
