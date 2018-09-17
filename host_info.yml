@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: Get the host detail 
-      shell: 'echo $(hostname -i)'
+      shell: 'echo $(hostname -I)'
       register: host
     - name: Print the value 
       debug: msg="The Host is {{ host.stdout }}"
