@@ -1,0 +1,6 @@
+- name: Sample parameter print
+  hosts: all
+  tasks:
+    - name: Pring Message
+      debug:
+        msg: "Hello {{ FirstName }}"
