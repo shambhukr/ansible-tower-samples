@@ -16,4 +16,6 @@
 
 - name: Print group_vars
   shell: echo {{ project_name }}
+  debug:
+    msg: "project:- {{ project_name }}"
  
