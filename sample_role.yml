@@ -1,6 +1,6 @@
 ---
 - name: Playbook to use role and print variables of group_vars
-- hosts: all
+  hosts: all
   become: true
   become_user: root
 
