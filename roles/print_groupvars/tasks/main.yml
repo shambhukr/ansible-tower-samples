@@ -1,0 +1,19 @@
+---
+- name: Copying sample.sh to /tmp of target server
+  copy:
+    src: sample.sh
+    dest: /tmp
+    mode: 0755
+
+- name: Verify script is copied 
+  shell: ls /tmp/sample.sh
+  register: copy
+
+- debug: var=copy.stdout
+
+- name: Execute sample.sh
+  shell: '/tmp/sample.sh'
+
+  - name: Print group_vars
+    shell: echo {{ project_name }}
+ 
