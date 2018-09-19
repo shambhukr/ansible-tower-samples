@@ -12,7 +12,7 @@
 - debug: var=copy.stdout
 
 - name: Execute sample.sh
-  shell: '/tmp/sample.sh'
+  command: "sh /tmp/sample.sh"
 
 - name: Print group_vars
   debug:
