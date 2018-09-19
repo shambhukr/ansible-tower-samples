@@ -1,1 +1,1 @@
-echo "In shell:- $project_name" > sample.log
+echo "In shell:- $project_name" > /tmp/sample.log
