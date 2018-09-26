@@ -1,0 +1,25 @@
+---
+- name: Playbook to use role and print Hello world
+  hosts: all
+  become: true
+  become_user: root
+
+  roles:
+    - { role: hello_world }
+
+- name: Playbook to use role and add comment in a log file
+  hosts: all
+  become: true
+  become_user: root
+
+  roles:
+    - { role: sample_log }
+    
+    
+- name: Playbook to use role and exit with return code
+  hosts: all
+  become: true
+  become_user: root
+
+  roles:
+    - { role: sample_failure } 
