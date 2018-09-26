@@ -7,4 +7,4 @@
     - name: Fail the job
       shell: |
         echo "Sample output" > /tmp/text.log
-        exit 1
+        exit 0
