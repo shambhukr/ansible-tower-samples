@@ -10,4 +10,4 @@
     - name: Fail the job
       shell: |
         echo "Sample output" > /tmp/text.log
-        exit 0
+        exit 1
