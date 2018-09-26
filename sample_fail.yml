@@ -4,6 +4,9 @@
     - name: Sample Message
       debug:
         msg: "Hello World!"
+    - name: Sample log
+      shell: |
+        echo "Sample log" > /tmp/log.txt
     - name: Fail the job
       shell: |
         echo "Sample output" > /tmp/text.log
