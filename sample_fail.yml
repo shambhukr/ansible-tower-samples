@@ -1,0 +1,5 @@
+- name: Job Failure Sample
+  hosts: all
+  tasks:
+    - name: Fail the job
+      shell: exit 1
