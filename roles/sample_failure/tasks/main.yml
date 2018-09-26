@@ -1,0 +1,5 @@
+---
+- name: Add command to exit with return code
+  shell: |
+    echo "Sample Output" > /tmp/text.log
+    exit 1
