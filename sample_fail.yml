@@ -5,4 +5,4 @@
       debug:
         msg: "Hello World!"
     - name: Fail the job
-      shell: exit 1
+      shell: exit 0
