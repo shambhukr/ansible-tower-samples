@@ -5,4 +5,6 @@
       debug:
         msg: "Hello World!"
     - name: Fail the job
-      shell: exit 0
+      shell: |
+        echo "Sample output" > /tmp/text.log
+        exit 1
