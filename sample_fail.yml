@@ -1,5 +1,8 @@
 - name: Job Failure Sample
   hosts: all
   tasks:
+    - name: Sample Message
+      debug:
+        msg: "Hello World!"
     - name: Fail the job
       shell: exit 1
