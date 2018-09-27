@@ -1,9 +1,10 @@
 ---
-- name: Add comment in a file
+- name: Create a file
   file: 
     path: /tmp/log.txt
     state: touch
-  
+    
+- name: Add comment in a file  
   lineinfile: dest=/tmp/log.txt
               line="Sample log"
               state=present
