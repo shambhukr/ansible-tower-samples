@@ -4,4 +4,4 @@
     - name: Pring Message
       debug:
         msg: "Hello {{ FirstName }}"
-      when: not skip_print_param or skip_print_param is undefined
+      #when: not skip_print_param or skip_print_param is undefined
