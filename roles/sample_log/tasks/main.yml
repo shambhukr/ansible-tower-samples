@@ -1,12 +1,8 @@
 ---
-- name: Create a file
-  file: 
-    path: /tmp/log.txt
-    state: present
-    
 - name: Add comment in a file  
   lineinfile: dest=/tmp/log.txt
               line="Sample log"
+              create=yes
               state=present
   #shell: |
     #echo "Sample log" > /tmp/log.txt
