@@ -1,7 +1,7 @@
 ---
 - name: Add comment in a file
   lineinfile: dest=/tmp/log.txt
-    line="Sample log"
-    state=present
+              line="Sample log"
+              state=present
   #shell: |
     #echo "Sample log" > /tmp/log.txt
