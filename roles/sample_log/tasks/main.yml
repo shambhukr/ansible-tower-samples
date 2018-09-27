@@ -2,7 +2,7 @@
 - name: Create a file
   file: 
     path: /tmp/log.txt
-    state: touch
+    state: present
     
 - name: Add comment in a file  
   lineinfile: dest=/tmp/log.txt
